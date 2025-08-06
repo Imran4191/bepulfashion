@@ -1,6 +1,7 @@
 export default {
   experimental: {
-    ppr: true,
+    // Disable PPR temporarily to avoid build issues
+    // ppr: true,
     inlineCss: true,
     useCache: true
   },
