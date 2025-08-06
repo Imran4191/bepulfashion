@@ -13,16 +13,5 @@ export default {
         pathname: '/s/files/**'
       }
     ]
-  },
-  // Add this to handle dynamic routes properly during build
-  async generateBuildId() {
-    return 'build-' + Date.now().toString();
-  },
-  // Ensure proper handling of dynamic routes
-  trailingSlash: false,
-  // Add proper error handling for build-time errors
-  onDemandEntries: {
-    maxInactiveAge: 25 * 1000,
-    pagesBufferLength: 2,
   }
 };
